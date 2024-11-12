@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Bichiburguer</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Modak&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chewy&family=Delius&family=Modak&family=Rubik+Distressed&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chewy&family=Delius&family=Modak&family=Nerko+One&family=Rubik+Distressed&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Imagen de perfil */
+        .profile-img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.1);
+        }
+
+        .fondo {
+            background-color: rgb(0, 0, 0);
+        }
+
+        .chewy-regular {
+            font-family: "Chewy", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .delius-regular {
+            font-family: "Delius", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .nerko-one-regular {
+            font-family: "Nerko One", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        img {
+            border-radius: 5px;
+        }
+
+        footer {
+            padding: 20px;
+            background-color: rgb(59, 57, 57);
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fondo ">
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg" style="background-color: rgb(84, 171, 243);">
+            <div class="container-fluid nerko-one-regular">
+                <a class="navbar-brand" href="index.html"> <img src="img/bichiii.png" width="100px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">
+                                <h4>Menú</h4>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="acerca_de.html">
+                                <h4>Nosotros</h4>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html"><b>
+                                    <h2>Contacto</h2>
+                                </b></a>
+                        </li>
+                    </ul>
+                    <!-- Imagen de perfil a la derecha -->
+                    <ul class="navbar-nav ms-3">
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                <img id="carritocompras"
+                                    src="img/carrito.webp"
+                                    alt="Perfil" class="profile-img">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Bootstrap JS y dependencias -->
+        <div class="container mt-5 delius-regular" style="color: rgb(255, 255, 255);">
+            <h2 class="text-center chewy-regular">Contácto y Sugerencias</h2><br>
+            <p class="text-center">Déjanos tus datos junto con tu mensaje y estaremos en contacto. </p>
+
+            <form>
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Número de Teléfono</label>
+                    <input type="tel" class="form-control" id="telefono" placeholder="Tu número de teléfono" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."
+                        required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Enviar Mensaje</button>
+            </form><br><br>
+        </div>
+        <footer>
+            <p class="text-center"><br> 2024 La Bichiburger ® | Josué Daniel Yepez Castruita | Todos los derechos reservado
+            </p>
+            <div>
+                <p class="text-center delius-regular">
+                    <a href="https://www.instagram.com/labichiburger/"><img
+                            src="img/instagram.png"
+                            width="30px"></a>
+                    <a href="https://www.facebook.com/profile.php?id=61564026193820"><img src="img/facebook.webp"
+                            width="50px"></a>
+                    <a href="https://www.x.com"><img src="img/x.png" width="45px"></a>
+                    <a href="https://web.whatsapp.com/"><img src="img/whatsapp.webp" width="35px"></a>
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

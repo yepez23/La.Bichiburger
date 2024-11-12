@@ -1,0 +1,19 @@
+        body {
+          background-color: rgb(243, 159, 243)
+        }
+
+        h1 {
+          color: red
+        }
+
+        #Estudios {
+          color: green
+        }
+
+        .intro {
+          color: blue
+        }
+
+        div.cuerpo{
+            color:darkmagenta
+        }

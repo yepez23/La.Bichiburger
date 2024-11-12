@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Bichiburguer</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Modak&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chewy&family=Delius&family=Modak&family=Rubik+Distressed&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chewy&family=Delius&family=Modak&family=Nerko+One&family=Rubik+Distressed&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Imagen de perfil */
+        .profile-img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.1);
+        }
+
+        .fondo {
+            background-color: rgb(0, 0, 0);
+        }
+
+        .chewy-regular {
+            font-family: "Chewy", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .delius-regular {
+            font-family: "Delius", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .nerko-one-regular {
+            font-family: "Nerko One", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        img {
+            border-radius: 5px;
+        }
+
+        footer {
+            padding: 20px;
+            background-color: rgb(59, 57, 57);
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fondo">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg" style="background-color: rgb(84, 171, 243);">
+            <div class="container-fluid nerko-one-regular">
+                <a class="navbar-brand" href="index.html"> <img src="img/bichiii.png" width="100px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">
+                                <h2>Menú</h2>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="acerca_de.html">
+                                <h4>Nosotros</h4>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">
+                                <h4>Contacto</h4>
+                            </a>
+                        </li>
+                    </ul>
+                    <!--CARRITO DE COMPRAS-->
+                    <ul class="navbar-nav ms-3">
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                <img id="carritocompras"
+                                    src="img/carrito.webp"
+                                    alt="Perfil" class="profile-img">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--CONTENIDO-->
+        <div class="container mt-5 delius-regular" style="color: rgb(255, 255, 255);">
+            <div class="row ">
+                <div class="col">
+                    <h2 class="text-center chewy-regular">Menú la bichiburguer</h2><br>
+                    <div>
+                        <p class="text-center col">
+                            Nuestro menú es ideal para satisfacer tus gustos, contamos con una gran variedad de
+                            alimentos que superaran tus expectativas</p>
+                        <br>
+                    </div>
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <!-- Tarjeta de Salchibichi -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/salchibichi2.jpeg"
+                                    width="200px" height="300px" class="card-img-top" alt="Sachibichi">
+                                <div class="card-body">
+                                    <h4 class="card-title"><b>Salchibichi - $90 MXN</b></h4>
+                                    <p class="card-text">Carne casera acompañada de salchicas de la mejor calida y
+                                        condimentos a tu gusto para darte lo mejor. </p>
+                                    <form>
+                                        <label><input type="checkbox" id="jamón" 
+                                            value="condimentos" />-Jamón</label>
+                                        <label><input type="checkbox" id="queso"
+                                             value="condimentos" />-Queso</label>
+                                        <label><input type="checkbox" id="tomate"
+                                                value="condimentos" />-Tomate</label><br>
+                                        <label><input type="checkbox" id="aguacate"
+                                                value="condimentos" />-Aguacate</label>
+                                        <label><input type="checkbox" id="Lechuga"
+                                                value="condimentos" />-Lechuga</label>
+                                        <label><input type="checkbox" id="mostaza"
+                                                value="condimentos" />-Mostaza</label>
+                                        <label><input type="checkbox" id="mayonesa"
+                                                value="condimentos" />-Mayonesa</label><br><br>
+                                        <label for="mensaje"><u>Otro condimento</u></label>
+                                        <textarea class="form-control" id="mensaje" rows="4"
+                                            placeholder="Condimento..."></textarea><br>
+                                        <button type="submit" class="btn btn-primary btn-block">Agregar al
+                                            carrito</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tarjeta de Bichiclásica -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/bichiclásica.webp"
+                                    width="200px" height="300px" class="card-img-top" alt="Bichiclásica">
+                                <div class="card-body">
+                                    <h4 class="card-title"><b>Bichiclásica - $70 MXN</b></h4>
+                                    <p class="card-text">Carne de la casa con jamón, queso, lechuga, tomate, aguacate,
+                                        mostaza y mayonesa a tu gusto.</p>
+                                    <form>
+                                        <label><input type="checkbox" id="jamón" value="condimentos" />-Jamón</label>
+                                        <label><input type="checkbox" id="queso" value="condimentos" />-Queso</label>
+                                        <label><input type="checkbox" id="tomate"
+                                                value="condimentos" />-Tomate</label><br>
+                                        <label><input type="checkbox" id="aguacate"
+                                                value="condimentos" />-Aguacate</label>
+                                        <label><input type="checkbox" id="Lechuga"
+                                                value="condimentos" />-Lechuga</label>
+                                        <label><input type="checkbox" id="mostaza"
+                                                value="condimentos" />-Mostaza</label>
+                                        <label><input type="checkbox" id="mayonesa"
+                                                value="condimentos" />-Mayonesa</label><br><br>
+                                        <label for="mensaje"><u>Otro condimento</u></label>
+                                        <textarea class="form-control" id="mensaje" rows="4"
+                                            placeholder="Condimento..."></textarea><br>
+                                        <button type="submit" class="btn btn-primary btn-block">Agregar al
+                                            carrito</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tarjeta de Papas Fritas -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/papasfritas.webp"
+                                    width="200px" height="300px" class="card-img-top" alt="Papas Fritas">
+                                <div class="card-body">
+                                    <h4 class="card-title"><b>Papas fritas - $20 MXN</b></h4>
+                                    <p class="card-text">Papas fritas sazonadas perfectas para acompañar tu hamburguesa.
+                                    </p>
+                                    <form>
+                                        <label><input type="checkbox" id="queso" value="condimentos" />-Queso</label>
+                                        <label><input type="checkbox" id="paprica"
+                                                value="condimentos" />-Paprica</label><br>
+                                        <label><input type="checkbox" id="pimienta limon"
+                                                value="condimentos" />-Pimienta limón</label>
+                                        <label><input type="checkbox" id="ketchup"
+                                                value="condimentos" />-Ketchup</label><br><br>
+                                        <label for="mensaje"><u>Otro condimento</u></label>
+                                        <textarea class="form-control" id="mensaje" rows="4"
+                                            placeholder="Condimento..."></textarea><br>
+                                        <button type="submit" class="btn btn-primary btn-block">Agregar al
+                                            carrito</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Tarjeta de Aros de cebolla -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/arosdecebolla.jpg"
+                                    width="200px" height="300px" class="card-img-top" alt="Aros de cebolla">
+                                <div class="card-body">
+                                    <h4 class="card-title"><b>Aros de cebolla - $35 MXN</b></h4>
+                                    <p class="card-text">Aros 100% hechos en casa acompañados de aderezo BBQ</p>
+                                    <form>
+                                        <label><input type="checkbox" id="Salsa barbacoa" value="condimentos" />-Salsa
+                                            barbacoa</label>
+                                        <label><input type="checkbox" id="Salsa tartara" value="condimentos" />-Salsa
+                                            tartara</label>
+                                        <label><input type="checkbox" id="Salsa picante sriracha"
+                                                value="condimentos" />-Salsa picante sriracha</label><br><br>
+                                        <label for="mensaje"><u>Otro condimento</u></label>
+                                        <textarea class="form-control" id="mensaje" rows="4"
+                                            placeholder="Condimento..."></textarea><br>
+                                        <button type="submit" class="btn btn-primary btn-block">Agregar al
+                                            carrito</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tarjeta de Boneless -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/boneless.jpg"
+                                    width="200px" height="300px" class="card-img-top" alt="Boneless">
+                                <div class="card-body">
+                                    <h4 class="card-title"><b>Boneless - $90 MXN</b></h4>
+                                    <p class="card-text">Orden de boneless 100% hechos en casa con el mejor sazón. (La
+                                        orden incluye papas fritas)</p>
+                                    <form>
+                                        <p><u>Condimento papas</u></p>
+                                        <label><input type="checkbox" id="queso" value="condimentos" />-Queso</label>
+                                        <label><input type="checkbox" id="paprica"
+                                                value="condimentos" />-Paprica</label><br>
+                                        <label><input type="checkbox" id="pimienta limon"
+                                                value="condimentos" />-Pimienta limón</label>
+                                        <label><input type="checkbox" id="ketchup"
+                                                value="condimentos" />-Ketchup</label><br><br>
+                                        <p><u>Salsas boneless</u></p>
+                                        <label><input type="checkbox" id="Buffalo"
+                                                value="condimentos" />-Buffalo</label>
+                                        <label><input type="checkbox" id="BBQ" value="condimentos" />-BBQ</label>
+                                        <label><input type="checkbox" id="Habanero"
+                                                value="condimentos" />-Habanero</label><br>
+                                        <label><input type="checkbox" id="Chipotle"
+                                                value="condimentos" />-Chipotle</label><br><br>
+                                        <label for="mensaje"><u>Otro condimento</u></label>
+                                        <textarea class="form-control" id="mensaje" rows="4"
+                                            placeholder="Condimento..."></textarea><br>
+                                        <button type="submit" class="btn btn-primary btn-block">Agregar al
+                                            carrito</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tarjeta de Burrito-->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/burrito.jpeg"
+                                    width="200px" height="300px" class="card-img-top" alt="Burritos">
+                                <div class="card-body">
+                                    <h4 class="card-title"><b>Burritos clásicos -$90 MXN</b></h4>
+                                    <p class="card-text">Burrito con deshebrada lechuga, tomate y aguacate.
+                                    </p>
+                                    <form>
+                                        <label><input type="checkbox" id="Lechuga"
+                                                value="condimentos" />-Lechuga</label>
+                                        <label><input type="checkbox" id="Tomate"
+                                                value="condimentos" />-Tomate</label><br>
+                                        <label><input type="checkbox" id="Aguacate"
+                                                value="condimentos" />-Aguacate</label>
+                                        <label><input type="checkbox" id="Cebolla"
+                                                value="condimentos" />-Cebolla</label><br><br>
+                                        <label for="mensaje"><u>Otro condimento</u></label>
+                                        <textarea class="form-control" id="mensaje" rows="4"
+                                            placeholder="Condimento..."></textarea><br>
+                                        <button type="submit" class="btn btn-primary btn-block">Agregar al
+                                            carrito</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p class="text-center"><br> 2024 La Bichiburger ® | Josué Daniel Yepez Castruita | Todos los derechos
+            reservado
+        </p>
+        <div>
+            <p class="text-center delius-regular">
+                <a href="https://www.instagram.com/labichiburger/"><img
+                        src="img/instagram.png"
+                        width="30px"></a>
+                <a href="https://www.facebook.com/profile.php?id=61564026193820"><img src="img/facebook.webp"
+                        width="50px"></a>
+                <a href="https://www.x.com"><img src="img/x.png" width="45px"></a>
+                <a href="https://web.whatsapp.com/"><img src="img/whatsapp.webp" width="40px"></a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

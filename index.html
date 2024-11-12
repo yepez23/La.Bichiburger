@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Bichiburguer</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tipografía -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Modak&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chewy&family=Delius&family=Modak&family=Rubik+Distressed&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chewy&family=Delius&family=Modak&family=Nerko+One&family=Rubik+Distressed&display=swap"
+        rel="stylesheet">
+    <style>
+        /*ESTILOS BICHIBURGUER*/
+        .profile-img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.1);
+        }
+
+        .fondo {
+            background-color: rgb(255, 255, 123);
+        }
+
+        .chewy-regular {
+            font-family: "Chewy", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .delius-regular {
+            font-family: "Delius", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .nerko-one-regular {
+            font-family: "Nerko One", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        img {
+            border-radius: 5px;
+        }
+
+        footer {
+            padding: 20px;
+            background-color: rgb(59, 57, 57);
+            color: aliceblue;
+        }
+        .hero-section {
+            background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20231007/pngtree-an-assortment-of-various-fast-food-items-on-a-textured-gray-image_13609477.png);
+            /* Reemplaza con la URL de tu imagen */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            color: rgb(255, 254, 254);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-text {
+            text-align: center;
+            font-size: 3rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .btn-custom {
+            font-size: 1.25rem;
+            padding: 10px 20px;
+            background-color: #f8d7da;
+            color: #721c24;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: #721c24;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fondo">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg" style="background-color: rgb(84, 171, 243);">
+            <div class="container-fluid nerko-one-regular">
+                <a class="navbar-brand" href="index.html"> <img src="img/bichiii.png" width="100px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">
+                                <h4>Menú</h4>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="acerca_de.html">
+                                <h4>Nosotros</h4>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">
+                                <h4>Contacto</h4>
+                            </a>
+                        </li>
+                    </ul>
+                    <!--Carrito de compras-->
+                    <ul class="navbar-nav ms-3">
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                <img id="carritocompras"
+                                    src="img/carrito.webp"
+                                    alt="Perfil" class="profile-img">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--CONTENIDO-->
+        <div style="color: rgb(2, 0, 0);">
+            <!-- Sección principal con imagen de fondo -->
+            <section class="hero-section">
+                <div class="hero-text" style=" margin: 0%; background-position: center; background-size: cover; background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20231007/pngtree-an-assortment-of-various-fast-food-items-on-a-textured-gray-image_13609477.png); width: 100%; height: 500px;">
+                    <br><h2>Bienvenidos a la Bichiburger, el mejor restaurante de comida rápida de la ciudad. </h2><br>
+                    <p>¡Una experiencia gastronómica única te espera!</p>
+                    <a href="servicios.html" class="btn btn-custom">Ver nuestro menú</a><br><br>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <p class="text-center"><br> 2024 La Bichiburger ® | Josué Daniel Yepez Castruita | Todos los derechos
+                reservado
+            </p>
+            <div>
+                <p class="text-center delius-regular">
+                    <a href="https://www.instagram.com/labichiburger/"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1000px-Instagram_logo_2022.svg.png"
+                            width="30px"></a>
+                    <a href="https://www.facebook.com/profile.php?id=61564026193820"><img src="img/facebook.webp"
+                            width="50px"></a>
+                    <a href="https://www.x.com"><img src="img/x.png" width="45px"></a>
+                    <a href="https://web.whatsapp.com/"><img src="img/whatsapp.webp" width="40px"></a>
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
